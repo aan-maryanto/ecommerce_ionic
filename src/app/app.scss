@@ -1,0 +1,140 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+h1,h2,h3,h4,h5,h6, p{
+    color: rgba($color: black, $alpha: .6);
+}
+
+p{
+    text-transform: capitalize;
+}
+
+.container{
+    padding: 16px;
+
+    .item-flex{
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        height: 100vh;
+    }
+}
+
+.container-flex{
+    padding: 0px;
+}
+
+.field-btn {
+    margin-top: 20px;
+
+    .btn {
+        padding: 4px 16px;     
+        width: 100%; 
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    .btn-icon {
+        height: 100%;
+        border: 1px solid rgba($color: gray, $alpha: .5);
+        background: 1px solid rgba($color: gray, $alpha: 3);
+    }
+    
+    .btn-default{
+        border-radius: 2px;
+        background: #ecf0f1;
+        border: 1px solid #bdc3c7;
+        color: #000000;
+    }
+    
+    .btn-primary{
+        border-radius: 2px;
+        background: #3498db;
+        border: 1px solid #2980b9;
+        color: #ffffff;
+    }
+    
+    .btn-danger{
+        border-radius: 2px;
+        background: #e74c3c;
+        border: 1px solid #c0392b;
+        color: #ffffff;
+    }
+    
+    .btn-warning{
+        border-radius: 2px;
+        background: #e67e22;
+        border: 1px solid #d35400;
+        color: #ffffff;
+    }
+    
+    .btn-success{
+        border-radius: 2px;
+        background: #1abc9c;
+        border: 1px solid #16a085;
+        color: #ffffff;
+    }
+}
+
+.field-input {
+    margin: 10px 0px;
+
+    .input{
+        width: 100%; 
+        border-radius: 2px; 
+        padding: 4px 8px;
+        border: 1px solid rgba($color: gray, $alpha: .5)
+    }
+    
+    .input:focus{
+        outline: none;
+        border: 1px solid #2980b9;
+    }
+    
+    .input-danger{
+        outline: none;
+        border: 1px solid #e74c3c;
+    }
+    
+    .input-success{
+        outline: none;
+        border: 1px solid #1abc9c;
+    }
+}
+
+.toast-warning {
+    background: #e67e22;
+    color: #ffffff;
+}
+
+.toast-danger {
+    background: #e74c3c;
+    color: #ffffff;
+}
+
+.toast-success{
+    background: #1abc9c;
+    color: #ffffff;
+}
+
+.form-auth{
+    padding: 8px; 
+    border-radius: 5px; 
+    box-shadow: 10px 20px 30px rgba(#ecf0f1, .3); 
+    width: 100%; 
+    text-align: center;
+}

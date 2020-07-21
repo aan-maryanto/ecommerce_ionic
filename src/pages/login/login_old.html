@@ -1,0 +1,23 @@
+<ion-content>
+    <div class="container">
+        <div class="item-flex">
+            <div class="form-auth">
+                <div>
+                    <h1>Silakan Login</h1>
+                </div>
+                <div style="margin: 10px 0px;">
+                    <input type="text" class="input" placeholder="username">
+                </div>
+                <div style="margin: 10px 0px; display: flex;">
+                    <input [type]="_togglePass" class="input" placeholder="password"><span><button (click)="togglePass()" class="btn-icon"><i class="icofont-eye"></i></button></span>
+                </div>
+                <div style="margin: 20px 0px;">
+                    <button type="submit" (click)="toHome()" class="btn btn-primary">Login</button>
+                </div>
+                <div>
+                    <p>Don't have account? <span (click)="toRegister()" style="color: #3498db;">Register</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

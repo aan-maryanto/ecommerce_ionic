@@ -1,0 +1,52 @@
+<ion-content>
+    <div class="container-flex">
+        <div style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTgtsGsdztWA7ntVP2oLEpoLj-OaRyINUkVumi86YHrfg3faj2Y); background-size: cover; height: 250px; width: 100%;">
+        </div>
+        <div>
+            <ion-segment [(ngModel)]="auth">
+                <ion-segment-button value="signin">
+                  Sign In
+                </ion-segment-button>
+                <ion-segment-button value="signup">
+                  Sign Up
+                </ion-segment-button>
+              </ion-segment>
+        </div>
+        <div [ngSwitch]="auth">
+            <div *ngSwitchCase="'signin'" class="container">
+                <div>
+                    <h1 style="text-align: center;">Sign In</h1>
+                    <div class="field-input">
+                        <input type="email" class="input" placeholder="email">
+                    </div>
+                    <div class="field-input">
+                        <input type="password" class="input" placeholder="password">
+                    </div>
+                    <div class="field-btn">
+                        <button class="btn btn-primary" (click)="loginAction()">Sign In</button>
+                    </div>
+                </div>
+            </div>
+            <div *ngSwitchCase="'signup'" class="container">
+                <div>
+                    <h1 style="text-align: center;">Sign Up</h1> 
+                    <div class="field-input">
+                        <input type="email" class="input" placeholder="email">
+                    </div>
+                    <div class="field-input">
+                        <input type="text" class="input" placeholder="usernam">
+                    </div>
+                    <div class="field-input">
+                        <input type="text" class="input" placeholder="password">
+                    </div>
+                    <div class="field-input">
+                        <input type="text" class="input" placeholder="confirm password">
+                    </div>
+                    <div class="field-btn">
+                        <button class="btn btn-primary" (click)="registerAction()">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-menu [content]="content" type="overlay">  
+  <ion-content>
+    <div>
+      <div style="width: 100%; height: 180px; background-image: linear-gradient(135deg, #3498db, #9b59b6); display: flex; justify-content: center; align-items: center;">
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFJUIRwtlzDGKLC4nau-0dOJcMGa-XwycfHVEmaQ1oI3u6eusq" alt="img-profile" style="border-radius: 50%; width: 100px; height: 100px;">
+          <div style="text-align: center;">Aan Maryanto</div>
+          <ion-badge>see my profile</ion-badge>
+        </div>
+      </div>
+    </div>
+    <div style="width: 100%; height: 100%; padding: 10px 16px;">
+      <div (click)="openPage('HomePage')">
+        <div style="padding: 0px 10px; display: flex;">
+          Home
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div (click)="openPage('HistoryPage')">
+        <div style="padding: 0px 10px; display: flex;">
+          History
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div (click)="openPage('NotificationPage')">
+        <div style="padding: 0px 10px; display: flex;">
+          Notification
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+        <div style="border: 1px solid #f8f8f8; padding: 16px; border-radius: 5px; margin: 5px;">
+          <i class="icofont-folder"></i>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

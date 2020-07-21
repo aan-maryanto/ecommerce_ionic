@@ -1,0 +1,36 @@
+page-home {
+    .icon-action{
+        border-radius: 20px;
+        height: 30px;
+        width: 30px;
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+    .item-slider{
+        width: 100%; 
+        min-height: 200px; 
+        background-image: url('../assets/imgs/no_image.png'); 
+        background-size: cover;
+    }
+
+    .container-menu {
+        margin: 16px 16px; 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: stretch;
+
+        .item-menu {
+            margin: 5px 10px; 
+            height: 60px; 
+            width: 60px; 
+            text-align:center
+        }
+
+        .text-menu {
+            font-size:10px; 
+            text-transform: uppercase;
+        }
+    }
+}
